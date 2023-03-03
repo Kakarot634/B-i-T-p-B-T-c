@@ -16,12 +16,12 @@ public class Bai_Tap_1 {
         }
         sum1(array);
         sum2(array);
-        tich(array);
+//        tich(array);
     }
 //Bài 2:
     public static void sum1(int[] array){
         int tong = 0;
-        for (int i = 1; i < array.length; i+=2) {
+        for (int i = 0; i < array.length; i+=2) {
             tong += array[i];
         }
         System.out.println("Tổng của hàm 1 3 5 7 9 là: " + tong);
@@ -30,7 +30,7 @@ public class Bai_Tap_1 {
     public static void sum2(int[] array){
         int tong = 0;
         for (int i = 1; i < array.length; i+=2) {
-            if (i == 5){
+            if (i == 4 ){
                 continue;
             }
             tong += array[i];
